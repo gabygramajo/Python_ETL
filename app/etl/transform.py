@@ -8,7 +8,8 @@ def format_users():
     for usuario in usuarios.itertuples():
         list_usuarios.append({'id': usuario.id, 
         'name': usuario.name, 
-        'username': usuario.username, 
+        'username': usuario.username,
+        'email': usuario.email, 
         'address': f"{usuario._7}, {usuario._8}, {usuario._9}",
         'zipcode': usuario._10,
         'geo': f"{usuario._11}, {usuario._12}", 
